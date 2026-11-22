@@ -325,7 +325,7 @@ const GOT_TIPP = {
   order: 'With get you need do / did: Did the thief get caught? He didn’t get caught.',
   pp: 'After get / got always the 3rd form: caught, stolen, broken.',
 }
-const GOT_KONTEXT = ['🗣️ spoken English – use got']
+const GOT_KONTEXT = ['🗣️ casual spoken English with got (was is also correct)']
 
 /** @param o.art 'aussage' | 'frage' | 'verneinung' | 'have' */
 function gotPassiv(o) {

@@ -233,15 +233,15 @@ With verbs like **say, think, believe, know, report, expect** there are **two** 
 
 ## 9 · Spoken English: got instead of was {#get-passive}
 
-When we **talk**, we often use **get / got** instead of **be / was** – especially when something happens **suddenly** or it is **bad news**.
-*In der gesprochenen Sprache sagt man oft „got“ statt „was“ – vor allem, wenn etwas plötzlich passiert oder etwas Schlechtes.*
+When we **talk**, we **can** also use **get / got** instead of **be / was**. It sounds more casual. People often use it when something happens **suddenly** or it is **bad news**.
+*Beim Sprechen kann man statt „was“ auch „got“ sagen – das klingt lockerer. Man muss es aber nicht: „was“ ist immer richtig.*
 
 <PassiveGraphic
   name="got"
   caption="got + 3rd form. With get you need do / did in questions and negatives. Never use was and got together."
 />
 
-| be-passive (written) | get-passive (spoken) |
+| be-passive (always correct) | get-passive (casual, spoken) |
 |---|---|
 | The thief **was caught**. | The thief **got caught**. |
 | My phone **was stolen**. | My phone **got stolen**. |
@@ -258,7 +258,9 @@ When we **talk**, we often use **get / got** instead of **be / was** – especia
 :::
 
 ::: tip got or was?
-🗣️ **got** is for talking with friends. 📝 In a **police report**, a **text** or a **test**, use **was / were**.
+📝 **was / were** is **always correct** – when you write **and** when you talk.
+🗣️ **got** is an **extra, casual** way to say it when you talk. You never *have to* use it.
+In a **police report**, a **text** or a **test**, use **was / were**.
 :::
 
 ## Everything at a glance {#everything-at-a-glance}
