@@ -10,11 +10,12 @@ description: "The passive at a glance: be + past participle, when to use it, all
 - build the passive with **be + past participle** in every tense
 - decide if you need **by …** or not
 - understand **advanced** forms: *I was given …*, *She had her car repaired*, *He is said to be …*
+- use the spoken **got**-passive correctly: *My phone **got stolen**.* · *Did he **get caught**?*
 
 In an **active** sentence we say **who does** something. In a **passive** sentence we say **what happens** to something or someone.
 *Im Aktiv steht im Mittelpunkt, wer etwas tut. Im Passiv steht im Mittelpunkt, was mit etwas oder jemandem passiert.*
 
-<VideoBox title="The passive in 5 minutes" />
+<VideoBox title="The passive in 5 minutes" youtube="6OEJHT52_pw" duration="4:26" />
 
 <CaseButton />
 
@@ -226,13 +227,41 @@ With verbs like **say, think, believe, know, report, expect** there are **two** 
 
 *Earlier action* → **to have + past participle**: *He is said **to have escaped**.*
 
-### get-passive
-In spoken English, **get** can replace **be** – often for things that happen suddenly or are bad news:
-*The thief **got caught**.* · *My phone **got broken**.* · *Nobody **got hurt**.*
-
 ### Passive infinitive and -ing form
 - after verbs like *want, need, hope, have to*: **to be + past participle** – *The cameras **need to be checked**.* · *She doesn’t want **to be seen**.*
 - after verbs like *like, hate, avoid* and after prepositions: **being + past participle** – *He hates **being told** what to do.* · *The thief escaped without **being seen**.*
+
+## 9 · Spoken English: got instead of was {#get-passive}
+
+When we **talk**, we **can** also use **get / got** instead of **be / was**. It sounds more casual. People often use it when something happens **suddenly** or it is **bad news**.
+*Beim Sprechen kann man statt „was“ auch „got“ sagen – das klingt lockerer. Man muss es aber nicht: „was“ ist immer richtig.*
+
+<PassiveGraphic
+  name="got"
+  caption="got + 3rd form. With get you need do / did in questions and negatives. Never use was and got together."
+/>
+
+| be-passive (always correct) | get-passive (casual, spoken) |
+|---|---|
+| The thief **was caught**. | The thief **got caught**. |
+| My phone **was stolen**. | My phone **got stolen**. |
+| The window **was broken**. | The window **got broken**. |
+| Nobody **was hurt**. | Nobody **got hurt**. |
+| **Was** the thief caught? | **Did** the thief **get** caught? |
+| He **wasn’t** caught. | He **didn’t get** caught. |
+
+::: danger The 4 biggest “got” mistakes
+1. ✗ Biscuit **got catch**. → ✓ Biscuit **got caught**. (got + **3rd form**)
+2. ✗ Biscuit **was got** caught. → ✓ Biscuit **was** caught. / Biscuit **got** caught. (**be or got** – never both)
+3. ✗ **Got** Biscuit caught? · ✗ He **gotn’t** caught. → ✓ **Did** Biscuit **get** caught? · ✓ He **didn’t get** caught. (get needs **do / did**)
+4. ✗ I **got fixed my bike**. → ✓ I **got my bike fixed**. (get + **thing** + 3rd form)
+:::
+
+::: tip got or was?
+📝 **was / were** is **always correct** – when you write **and** when you talk.
+🗣️ **got** is an **extra, casual** way to say it when you talk. You never *have to* use it.
+In a **police report**, a **text** or a **test**, use **was / were**.
+:::
 
 ## Everything at a glance {#everything-at-a-glance}
 
@@ -249,6 +278,7 @@ In spoken English, **get** can replace **be** – often for things that happen s
 | **two objects** | Someone gave **me** a key. | **I was given** a key. |
 | **have sth done** | A builder repaired her roof. | She **had** her roof **repaired**. |
 | **personal passive** | People say he is rich. | He **is said to be** rich. |
+| **spoken: got** | Someone stole my phone. | My phone **got stolen**. |
 
 ::: tip Step by step: from active to passive
 1. Find the **object** → it becomes the **new subject** at the front
@@ -270,6 +300,8 @@ Put the sentences into the passive. Then open the solution.
 6. **Did** they **find** the money? → … the money …?
 7. Someone **gave** the guard a note. → The guard …
 8. People **say** that the thief **is** very clever. → The thief …
+9. *(spoken, with got)* The police **caught** the thief. → The thief …
+10. *(spoken, question with got)* Did they catch the thief? → … the thief … caught?
 
 ::: details Solutions
 1. My bike **was stolen** yesterday.
@@ -280,11 +312,13 @@ Put the sentences into the passive. Then open the solution.
 6. **Was** the money **found**?
 7. The guard **was given** a note.
 8. The thief **is said to be** very clever. (or: It is said that the thief is very clever.)
+9. The thief **got caught**.
+10. **Did** the thief **get** caught?
 :::
 
 ## Practise with the Crime Scene game {#practise}
 
-9 levels from easy to hard: **object first** · **is / was + 3rd form** · **irregular participles** · **more tenses** · **modal verbs** · **by … or not?** · **negatives & questions** · **advanced cases** · **the big case**.
+9 levels from easy to hard: **object first** · **is / was + 3rd form** · **irregular participles** · **more tenses** · **modal verbs** · **by … or not?** · **negatives & questions** · **advanced cases & got** · **the big case**.
 
 <CaseButton />
 
