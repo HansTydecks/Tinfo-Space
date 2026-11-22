@@ -14,7 +14,7 @@ description: "Reported speech at a glance: backshift of tenses, pronouns, time a
 **Reported speech** is used when you tell someone **what another person said**.
 *Mit der indirekten Rede gibst du wieder, was jemand anderes gesagt hat.*
 
-<VideoBox title="Reported speech in 5 minutes" />
+<VideoBox title="Reported speech in 5 minutes" youtube="709cOPKN7EY" duration="4:21" />
 
 <ReporterButton />
 

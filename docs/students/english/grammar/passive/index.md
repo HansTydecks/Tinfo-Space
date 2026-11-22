@@ -15,7 +15,7 @@ description: "The passive at a glance: be + past participle, when to use it, all
 In an **active** sentence we say **who does** something. In a **passive** sentence we say **what happens** to something or someone.
 *Im Aktiv steht im Mittelpunkt, wer etwas tut. Im Passiv steht im Mittelpunkt, was mit etwas oder jemandem passiert.*
 
-<VideoBox title="The passive in 5 minutes" />
+<VideoBox title="The passive in 5 minutes" youtube="6OEJHT52_pw" duration="4:26" />
 
 <CaseButton />
 
