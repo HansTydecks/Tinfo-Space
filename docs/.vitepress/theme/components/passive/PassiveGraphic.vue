@@ -10,6 +10,7 @@ import ByAgent from './grafiken/ByAgent.vue'
 import Questions from './grafiken/Questions.vue'
 import TwoObjects from './grafiken/TwoObjects.vue'
 import HaveDone from './grafiken/HaveDone.vue'
+import Got from './grafiken/Got.vue'
 import '../reported-speech/rs.css'
 import './pv.css'
 
@@ -23,6 +24,7 @@ const GRAFIKEN = {
   questions: Questions,
   'two-objects': TwoObjects,
   'have-done': HaveDone,
+  got: Got,
 }
 
 defineProps({
