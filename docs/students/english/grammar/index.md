@@ -14,3 +14,4 @@ Here you can learn and practise English grammar step by step.
 |---|---|---|
 | [Prepositions](./prepositions/) | in, on, at, by, with, from … – the small words that show *when*, *where*, *how* | 🤫 [Silent Teacher](./prepositions/silent-teacher) |
 | [Reported speech](./reported-speech/) | *He said he was tired.* – backshift, pronouns, time and place words, questions and commands | 🎙️ [Reporter game](./reported-speech/reporter) |
+| [Passive voice](./passive/) | *The jewels were stolen.* – be + past participle, all tenses, modal verbs, by-agent, questions, *have sth done*, *He is said to …* | 🕵️ [Crime Scene game](./passive/crime-scene) |
