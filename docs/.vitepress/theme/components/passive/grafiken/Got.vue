@@ -15,12 +15,12 @@ const top = (i) => 132 + i * 54
 </script>
 
 <template>
-  <svg viewBox="0 0 640 352" role="img" aria-label="Spoken English: The thief was caught – written. The thief got caught – spoken. The four biggest got mistakes: got catch instead of got caught; was got caught instead of was caught or got caught; Got he caught or He gotn’t caught instead of Did he get caught and He didn’t get caught; I got fixed my bike instead of I got my bike fixed.">
-    <text class="rs-label" x="30" y="20">📝 written</text>
+  <svg viewBox="0 0 640 352" role="img" aria-label="Spoken English: The thief was caught – always correct. The thief got caught – also possible when you talk, more casual. The four biggest got mistakes: got catch instead of got caught; was got caught instead of was caught or got caught; Got he caught or He gotn’t caught instead of Did he get caught and He didn’t get caught; I got fixed my bike instead of I got my bike fixed.">
+    <text class="rs-label" x="30" y="20">📝 always correct</text>
     <Chip v-for="c in was" :key="'w' + c.t" v-bind="c" :y="30" />
-    <text class="rs-label" x="350" y="20">🗣️ spoken</text>
+    <text class="rs-label" x="350" y="20">🗣️ also possible when you talk</text>
     <Chip v-for="c in got" :key="'g' + c.t" v-bind="c" :y="30" />
-    <text class="rs-small" x="320" y="92" text-anchor="middle">same meaning – got: something happens suddenly, often bad news</text>
+    <text class="rs-small" x="320" y="92" text-anchor="middle">same meaning – got sounds casual (often: something sudden or bad)</text>
 
     <text class="rs-title" x="16" y="120">✗ typical mistake</text>
     <text class="rs-title" x="236" y="120">✓ right</text>
