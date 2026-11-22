@@ -315,6 +315,58 @@ function haveDone() {
   }
 }
 
+
+// ---------------------------------------------------------------------------
+// Gesprochenes Passiv mit got – die häufigsten Fehler der Schüler
+// ---------------------------------------------------------------------------
+const GOT_VERBEN = ['steal', 'break', 'damage', 'smash', 'catch', 'arrest', 'hide'].map(verb)
+const GOT_TIPP = {
+  verb: 'Spoken passive: got + 3rd form – got stolen, got caught. Never “was got” and never “got steal”.',
+  order: 'With get you need do / did: Did the thief get caught? He didn’t get caught.',
+  pp: 'After get / got always the 3rd form: caught, stolen, broken.',
+}
+const GOT_KONTEXT = ['🗣️ spoken English – use got']
+
+/** @param o.art 'aussage' | 'frage' | 'verneinung' | 'have' */
+function gotPassiv(o) {
+  return () => {
+    const art = o.art === 'mix' ? pick(['aussage', 'frage', 'verneinung', 'have']) : o.art
+    const v = pick(GOT_VERBEN)
+    const obj = pick(v.objekte)
+    const sp = pick(ZEUGEN)
+    let d, r, label
+    if (art === 'aussage') {
+      const zeit = pick(['', ' last night', ' yesterday'])
+      d = `[agent:Someone] [verb:${v.past}] [obj:${obj.t}]${zeit}.`
+      r = `[obj:${gross(obj.t)}] ${luecke('verb', `got ${v.pp}`, [`${beForm('past simple', obj.n)} got ${v.pp}`, `got ${v.base}`, `got ${v.ing}`])}${zeit}.`
+      label = '🗣️ What you tell a friend'
+    } else if (art === 'frage') {
+      d = `[verb:Did] [agent:they] [verb:${v.base}] [obj:${obj.t}]?`
+      r = `${luecke('order', 'Did', ['Got', beForm('past simple', obj.n) === 'was' ? 'Was' : 'Were'])} [obj:${obj.t}] ${luecke('verb', 'get', ['got', 'getting'])} ${luecke('pp', v.pp, [v.base, v.ing])}?`
+      label = '🗣️ What you ask a friend'
+    } else if (art === 'verneinung') {
+      d = `[agent:They] [verb:didn’t ${v.base}] [obj:${obj.t}].`
+      r = `[obj:${gross(obj.t)}] ${luecke('verb', 'didn’t get', ['gotn’t', 'didn’t got', `${beForm('past simple', obj.n)}n’t got`])} [pp:${v.pp}].`
+      label = '🗣️ What you tell a friend'
+    } else {
+      const owner = pick(ZEUGEN.filter((z) => z !== sp))
+      const [wer, base, pp, , ding] = pick(SERVICE)
+      d = `[agent:${gross(wer)}] [verb:${pp}] [obj:${owner.n}’s ${ding}].`
+      r = `${owner.n} ${luecke('order', `got ${POSS[owner.g]} ${ding} ${pp}`, [`got ${pp} ${POSS[owner.g]} ${ding}`, `was got ${POSS[owner.g]} ${ding} ${pp}`])}.`
+      label = '🗣️ What you tell a friend'
+    }
+    return karte({
+      sp,
+      d,
+      r,
+      label,
+      kontext: GOT_KONTEXT,
+      anker: { verb: 'get-passive', order: 'get-passive', pp: 'get-passive' },
+      tipp: GOT_TIPP,
+    })
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Alle Level: je ein Array von Aufgaben, von leicht nach schwer
 // ---------------------------------------------------------------------------
@@ -364,6 +416,9 @@ const L8 = [
   personal({ it: true }),
   personal({ it: false }),
   haveDone(),
+  gotPassiv({ art: 'aussage' }),
+  gotPassiv({ art: 'frage' }),
+  gotPassiv({ art: 'mix' }),
 ]
 const L9 = [
   aussage({ tenses: ALLE, luecken: ['be', 'pp'] }),
@@ -375,6 +430,7 @@ const L9 = [
   zweiObjekte({ dingZuerst: 'mix' }),
   personal({ it: false }),
   haveDone(),
+  gotPassiv({ art: 'mix' }),
 ]
 
 export default [L1, L2, L3, L4, L5, L6, L7, L8, L9]

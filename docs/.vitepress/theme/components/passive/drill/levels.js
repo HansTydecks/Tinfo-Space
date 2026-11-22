@@ -12,7 +12,7 @@ export const LEVELS = [
   { icon: '🔧', titel: 'Modal verbs', de: 'can be opened, must be checked, has to be …', anker: 'modals' },
   { icon: '👤', titel: 'by … or not?', de: 'by the thief – oder ganz weglassen', anker: 'by-agent' },
   { icon: '❓', titel: 'Negatives & questions', de: 'wasn’t stolen, Was it found? Where was it hidden?', anker: 'questions' },
-  { icon: '🗂️', titel: 'Advanced cases', de: 'I was given …, He is said to …, had it repaired', anker: 'advanced' },
+  { icon: '🗂️', titel: 'Advanced cases & got', de: 'I was given …, He is said to …, got stolen, Did it get caught?', anker: 'advanced' },
   { icon: '🚨', titel: 'The big case', de: 'alles gemischt', anker: 'everything-at-a-glance' },
 ]
 
