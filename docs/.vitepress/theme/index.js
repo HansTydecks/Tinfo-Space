@@ -8,6 +8,8 @@ import PrepositionPictures from './components/silent-teacher-english/Preposition
 import ReportedSpeechGraphic from './components/reported-speech/ReportedSpeechGraphic.vue'
 import VideoBox from './components/VideoBox.vue'
 import ReporterButton from './components/reported-speech/drill/ReporterButton.vue'
+import PassiveGraphic from './components/passive/PassiveGraphic.vue'
+import CaseButton from './components/passive/drill/CaseButton.vue'
 import SortierAufgabe from './components/sortieren/SortierAufgabe.vue'
 import ToolOverview from './components/tools/ToolOverview.vue'
 import ToolInfo from './components/tools/ToolInfo.vue'
@@ -23,6 +25,8 @@ export default {
     app.component('ReportedSpeechGraphic', ReportedSpeechGraphic)
     app.component('VideoBox', VideoBox)
     app.component('ReporterButton', ReporterButton)
+    app.component('PassiveGraphic', PassiveGraphic)
+    app.component('CaseButton', CaseButton)
     app.component('SortierAufgabe', SortierAufgabe)
     app.component('ToolOverview', ToolOverview)
     app.component('ToolInfo', ToolInfo)
@@ -39,6 +43,10 @@ export default {
     app.component(
       'ReportedSpeechReporter',
       defineAsyncComponent(() => import('./components/reported-speech/drill/ReportedSpeechReporter.vue')),
+    )
+    app.component(
+      'PassiveCrimeScene',
+      defineAsyncComponent(() => import('./components/passive/drill/PassiveCrimeScene.vue')),
     )
     app.component(
       'NoseDive',

@@ -1,0 +1,19 @@
+/* Farben für Passive voice – Grafiken und Crime-Scene-Spiel (baut auf reported-speech/rs.css auf):
+   blau = Objekt → neues Subjekt · pink = Form von be (Zeitform) · grün = past participle · orange = by-agent / Satzbau */
+.rs-fig .k-obj   { --c: var(--rs-pron); --bg: var(--rs-pron-bg); }
+.rs-fig .k-be,
+.rs-fig .k-verb  { --c: var(--rs-tense); --bg: var(--rs-tense-bg); }
+.rs-fig .k-pp    { --c: var(--rs-time); --bg: var(--rs-time-bg); }
+.rs-fig .k-agent { --c: var(--rs-order); --bg: var(--rs-order-bg); }
+
+/* Akte, Papier, Stempel */
+.rs-fig {
+  --pv-paper: #fcf8ee; --pv-folder: #e8d49c; --pv-folder-dark: #c9ae66; --pv-stamp: #c92a2a; --pv-tape: #fcc419;
+}
+.dark .rs-fig {
+  --pv-paper: #23211c; --pv-folder: #5a4a26; --pv-folder-dark: #7a6434; --pv-stamp: #ff6b6b; --pv-tape: #e8b10c;
+}
+.rs-fig .pv-paper { fill: var(--pv-paper); stroke: var(--vp-c-divider); }
+.rs-fig .pv-folder { fill: var(--pv-folder); }
+.rs-fig .pv-stamp rect { fill: none; stroke: var(--pv-stamp); stroke-width: 2.5; }
+.rs-fig .pv-stamp text { fill: var(--pv-stamp); font-weight: 800; letter-spacing: 0.12em; }

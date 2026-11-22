@@ -159,6 +159,14 @@ export default defineConfig({
                   items: [
                     { text: '🎙️ Reporter game', link: '/students/english/grammar/reported-speech/reporter' }
                   ]
+                },
+                {
+                  text: 'Passive voice',
+                  link: '/students/english/grammar/passive/',
+                  collapsed: true,
+                  items: [
+                    { text: '🕵️ Crime Scene game', link: '/students/english/grammar/passive/crime-scene' }
+                  ]
                 }
               ]
             },
