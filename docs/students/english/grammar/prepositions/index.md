@@ -28,6 +28,8 @@ In German and English, prepositions often don’t match: *am Montag* → **on** 
 learn prepositions together with the words they go with, and **practise a lot**.
 :::
 
+<VideoBox title="Prepositions – all 8 types" youtube="JGxyE09UGPo" duration="6:18" />
+
 <EnglishSilentTeacherButton kapitel="mixed" />
 
 ## The eight types of prepositions
