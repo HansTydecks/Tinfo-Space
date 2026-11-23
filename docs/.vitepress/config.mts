@@ -167,6 +167,20 @@ export default defineConfig({
                   items: [
                     { text: '🕵️ Crime Scene game', link: '/students/english/grammar/passive/crime-scene' }
                   ]
+                },
+                {
+                  text: 'Tense & aspect',
+                  link: '/students/english/grammar/tenses/',
+                  collapsed: true,
+                  items: [
+                    { text: '1 · Present simple & progressive', link: '/students/english/grammar/tenses/present' },
+                    { text: '2 · Simple past', link: '/students/english/grammar/tenses/past' },
+                    { text: '3 · Present perfect', link: '/students/english/grammar/tenses/present-perfect' },
+                    { text: '4 · Past progressive', link: '/students/english/grammar/tenses/past-progressive' },
+                    { text: '5 · Past perfect', link: '/students/english/grammar/tenses/past-perfect' },
+                    { text: '6 · Present perfect progressive', link: '/students/english/grammar/tenses/perfect-progressive' },
+                    { text: '7 · The future', link: '/students/english/grammar/tenses/future' }
+                  ]
                 }
               ]
             },
