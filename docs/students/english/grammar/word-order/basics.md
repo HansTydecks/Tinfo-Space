@@ -104,6 +104,8 @@ More about *do*: [chapter 4 · questions & negatives](./questions#negatives).
 ✗ *I play not the guitar.* → ✓ I **don’t play** the guitar.
 :::
 
+<ExpressButton :level="1" />
+
 ## Check yourself {#check-yourself}
 
 Put the words in the right order.

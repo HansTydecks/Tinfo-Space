@@ -17,6 +17,8 @@ This page shows you the big picture. The chapters show you the details – and t
 
 <VideoBox title="Word order" />
 
+<ExpressButton />
+
 ## 1 · Why order matters so much in English {#why}
 
 In German, the **endings** show who does what. So you can change the order:
@@ -109,6 +111,13 @@ Your book can be a little different – that’s OK.
 | phrasal verb + pronoun | V – it – particle | Turn it off. | ✗ Turn off it. |
 | subordinate clause | conj. – S – V | … because I was tired. | ✗ … because I tired was. |
 | indirect question | QW – S – V | Can you tell me where the station is? | ✗ … where is the station? |
+
+## Practise with the Word Order Express {#practise}
+
+The wagons got mixed up in the shunting yard! Couple the words in the right order, find the wagon in the wrong place – and only then the train may leave.
+8 levels – one for every chapter, and a final **Rush hour** level that mixes everything.
+
+<ExpressButton />
 
 ## All chapters {#chapters}
 

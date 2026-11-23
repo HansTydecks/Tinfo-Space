@@ -188,6 +188,7 @@ export default defineConfig({
                   link: '/students/english/grammar/word-order/',
                   collapsed: true,
                   items: [
+                    { text: '🚂 Word Order Express', link: '/students/english/grammar/word-order/express' },
                     { text: '1 · Subject – verb – object', link: '/students/english/grammar/word-order/basics' },
                     { text: '2 · Manner, place, time', link: '/students/english/grammar/word-order/place-time' },
                     { text: '3 · Adverbs in the middle', link: '/students/english/grammar/word-order/adverbs' },

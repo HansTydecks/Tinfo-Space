@@ -13,6 +13,7 @@ import TenseGraphic from './components/tenses/TenseGraphic.vue'
 import WordOrderGraphic from './components/word-order/WordOrderGraphic.vue'
 import CaseButton from './components/passive/drill/CaseButton.vue'
 import AgencyButton from './components/tenses/drill/AgencyButton.vue'
+import ExpressButton from './components/word-order/drill/ExpressButton.vue'
 import SortierAufgabe from './components/sortieren/SortierAufgabe.vue'
 import ToolOverview from './components/tools/ToolOverview.vue'
 import ToolInfo from './components/tools/ToolInfo.vue'
@@ -33,6 +34,7 @@ export default {
     app.component('WordOrderGraphic', WordOrderGraphic)
     app.component('CaseButton', CaseButton)
     app.component('AgencyButton', AgencyButton)
+    app.component('ExpressButton', ExpressButton)
     app.component('SortierAufgabe', SortierAufgabe)
     app.component('ToolOverview', ToolOverview)
     app.component('ToolInfo', ToolInfo)
@@ -57,6 +59,10 @@ export default {
     app.component(
       'TimeTravelAgency',
       defineAsyncComponent(() => import('./components/tenses/drill/TimeTravelAgency.vue')),
+    )
+    app.component(
+      'WordOrderExpress',
+      defineAsyncComponent(() => import('./components/word-order/drill/WordOrderExpress.vue')),
     )
     app.component(
       'NoseDive',

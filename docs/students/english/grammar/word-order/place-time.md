@@ -92,6 +92,8 @@ If you have **two times** or **two places**, the **smaller** one usually comes f
 ✗ *He speaks fluently English.* → ✓ He speaks **English fluently**.
 :::
 
+<ExpressButton :level="2" />
+
 ## Check yourself {#check-yourself}
 
 Put the words in the right order.
