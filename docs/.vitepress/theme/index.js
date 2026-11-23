@@ -11,6 +11,7 @@ import ReporterButton from './components/reported-speech/drill/ReporterButton.vu
 import PassiveGraphic from './components/passive/PassiveGraphic.vue'
 import TenseGraphic from './components/tenses/TenseGraphic.vue'
 import CaseButton from './components/passive/drill/CaseButton.vue'
+import AgencyButton from './components/tenses/drill/AgencyButton.vue'
 import SortierAufgabe from './components/sortieren/SortierAufgabe.vue'
 import ToolOverview from './components/tools/ToolOverview.vue'
 import ToolInfo from './components/tools/ToolInfo.vue'
@@ -29,6 +30,7 @@ export default {
     app.component('PassiveGraphic', PassiveGraphic)
     app.component('TenseGraphic', TenseGraphic)
     app.component('CaseButton', CaseButton)
+    app.component('AgencyButton', AgencyButton)
     app.component('SortierAufgabe', SortierAufgabe)
     app.component('ToolOverview', ToolOverview)
     app.component('ToolInfo', ToolInfo)
@@ -49,6 +51,10 @@ export default {
     app.component(
       'PassiveCrimeScene',
       defineAsyncComponent(() => import('./components/passive/drill/PassiveCrimeScene.vue')),
+    )
+    app.component(
+      'TimeTravelAgency',
+      defineAsyncComponent(() => import('./components/tenses/drill/TimeTravelAgency.vue')),
     )
     app.component(
       'NoseDive',

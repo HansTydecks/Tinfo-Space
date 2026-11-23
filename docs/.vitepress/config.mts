@@ -173,6 +173,7 @@ export default defineConfig({
                   link: '/students/english/grammar/tenses/',
                   collapsed: true,
                   items: [
+                    { text: '🕰️ Time Travel Agency', link: '/students/english/grammar/tenses/time-agency' },
                     { text: '1 · Present simple & progressive', link: '/students/english/grammar/tenses/present' },
                     { text: '2 · Simple past', link: '/students/english/grammar/tenses/past' },
                     { text: '3 · Present perfect', link: '/students/english/grammar/tenses/present-perfect' },

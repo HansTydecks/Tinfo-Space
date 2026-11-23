@@ -106,6 +106,8 @@ With *was / were* you don’t need *did*: ✗ *Did you be at home?* → ✓ **We
 ✗ *They was at school.* → ✓ They **were** at school.
 :::
 
+<AgencyButton :level="2" />
+
 ## Check yourself {#check-yourself}
 
 Put the verbs into the simple past.

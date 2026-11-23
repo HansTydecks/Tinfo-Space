@@ -17,6 +17,8 @@ This page shows you how they all **fit together**. It’s much easier than 13 se
 
 <VideoBox title="Tense & aspect" />
 
+<AgencyButton />
+
 ## 1 · Tense or aspect – what’s the difference? {#tense-or-aspect}
 
 Every English verb form answers **two questions**:
@@ -146,6 +148,13 @@ And *will* and *going to* are not tenses at all, but **ways to talk about the fu
 | *going to* future | **am/is/are going to** + verb | **She’s going to play** later. | plans, Look! |
 | future progressive | **will be** + **-ing** | She **will be playing** at 10. | this time tomorrow, at 10 tomorrow |
 | future perfect | **will have** + **3rd form** | She **will have played** by 6. | by Friday, by then |
+
+## Practise with the Time Travel Agency {#practise}
+
+Glitches have broken the timeline! Jump to **THEN**, **NOW** or **LATER** and repair the time log with the right verb form.
+8 levels – one for every chapter, and a final **Timeline chaos** level that mixes everything.
+
+<AgencyButton />
 
 ## All chapters {#chapters}
 

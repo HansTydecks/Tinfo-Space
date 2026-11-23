@@ -93,6 +93,8 @@ Compare: *When we arrived, the film **started**.* → We arrived, and **then** t
 ✗ *When I came home, my brother has eaten all the cake.* → ✓ When I came home, my brother **had eaten** all the cake. (looking back from **then**, not from now)
 :::
 
+<AgencyButton :level="5" />
+
 ## Check yourself {#check-yourself}
 
 1. When I got to the station, the train ___ (already / leave).
