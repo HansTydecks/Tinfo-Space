@@ -182,6 +182,20 @@ export default defineConfig({
                     { text: '6 · Present perfect progressive', link: '/students/english/grammar/tenses/perfect-progressive' },
                     { text: '7 · The future', link: '/students/english/grammar/tenses/future' }
                   ]
+                },
+                {
+                  text: 'Word order',
+                  link: '/students/english/grammar/word-order/',
+                  collapsed: true,
+                  items: [
+                    { text: '1 · Subject – verb – object', link: '/students/english/grammar/word-order/basics' },
+                    { text: '2 · Manner, place, time', link: '/students/english/grammar/word-order/place-time' },
+                    { text: '3 · Adverbs in the middle', link: '/students/english/grammar/word-order/adverbs' },
+                    { text: '4 · Questions & negatives', link: '/students/english/grammar/word-order/questions' },
+                    { text: '5 · Two objects & phrasal verbs', link: '/students/english/grammar/word-order/objects' },
+                    { text: '6 · Subordinate clauses', link: '/students/english/grammar/word-order/clauses' },
+                    { text: '7 · Inversion & emphasis', link: '/students/english/grammar/word-order/special' }
+                  ]
                 }
               ]
             },

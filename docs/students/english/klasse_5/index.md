@@ -6,6 +6,7 @@ Willkommen im Englischbereich für die 5. Klasse!
 
 - Grundlagen der englischen Sprache
 - Einfache Vokabeln und Grammatik
+- [Word order](../grammar/word-order/) – Satzbau: Subjekt – Verb – Objekt, Fragen mit *do*
 - Alltagssituationen auf Englisch
 
 ## Materialien

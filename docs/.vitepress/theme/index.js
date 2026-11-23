@@ -10,6 +10,7 @@ import VideoBox from './components/VideoBox.vue'
 import ReporterButton from './components/reported-speech/drill/ReporterButton.vue'
 import PassiveGraphic from './components/passive/PassiveGraphic.vue'
 import TenseGraphic from './components/tenses/TenseGraphic.vue'
+import WordOrderGraphic from './components/word-order/WordOrderGraphic.vue'
 import CaseButton from './components/passive/drill/CaseButton.vue'
 import AgencyButton from './components/tenses/drill/AgencyButton.vue'
 import SortierAufgabe from './components/sortieren/SortierAufgabe.vue'
@@ -29,6 +30,7 @@ export default {
     app.component('ReporterButton', ReporterButton)
     app.component('PassiveGraphic', PassiveGraphic)
     app.component('TenseGraphic', TenseGraphic)
+    app.component('WordOrderGraphic', WordOrderGraphic)
     app.component('CaseButton', CaseButton)
     app.component('AgencyButton', AgencyButton)
     app.component('SortierAufgabe', SortierAufgabe)
