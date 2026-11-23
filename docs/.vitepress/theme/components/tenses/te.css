@@ -1,0 +1,40 @@
+/* Farben für das Kapitel „Tense & aspect" (baut auf reported-speech/rs.css auf):
+   blau = tense (present / past) · pink = progressive (be + -ing) · grün = perfect (have + 3rd form)
+   orange = future reference · grau = Signalwörter */
+.te-fig {
+  --te-now: #e03131; --te-mark: #fcc419; --te-axis: #868e96;
+}
+.dark .te-fig {
+  --te-now: #ff6b6b; --te-mark: #e8b10c; --te-axis: #909296;
+}
+.te-fig .k-zeit { --c: var(--rs-pron); --bg: var(--rs-pron-bg); }
+.te-fig .k-prog { --c: var(--rs-tense); --bg: var(--rs-tense-bg); }
+.te-fig .k-perf { --c: var(--rs-time); --bg: var(--rs-time-bg); }
+.te-fig .k-fut  { --c: var(--rs-order); --bg: var(--rs-order-bg); }
+.te-fig .k-now  { --c: var(--te-now); --bg: transparent; }
+
+/* farbige Wortteile in Texten */
+.te-fig tspan.te-c, .te-fig text.te-c { fill: var(--c); font-weight: 700; }
+
+/* Zeitstrahl */
+.te-axis { stroke: var(--te-axis); stroke-width: 2; stroke-linecap: round; fill: none; }
+.te-axis-head { fill: var(--te-axis); }
+.te-fig text.te-axis-t { fill: var(--vp-c-text-3); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.te-ref line { stroke: var(--c); stroke-width: 1.6; stroke-dasharray: 4 4; }
+.te-fig .te-ref text { fill: var(--c); font-size: 11.5px; font-weight: 800; letter-spacing: 0.06em; }
+.te-dot { fill: var(--c); stroke: var(--vp-c-bg); stroke-width: 2; }
+.te-wave { fill: none; stroke: var(--c); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.te-wave-head { fill: var(--c); }
+.te-area { fill: var(--bg); stroke: var(--c); stroke-width: 1.4; stroke-dasharray: 5 4; }
+.te-card { fill: var(--vp-c-bg); stroke: var(--vp-c-divider); stroke-width: 1.2; }
+.te-card.k-fut, .te-card.k-zeit, .te-card.k-prog, .te-card.k-perf { fill: var(--bg); stroke: var(--c); }
+.te-lane { fill: var(--vp-c-bg); stroke: none; }
+.te-lane.alt { fill: var(--vp-c-default-soft); }
+
+/* Raster */
+.te-cell { fill: var(--vp-c-bg); stroke: var(--vp-c-divider); stroke-width: 1.2; }
+.te-cell.is-dim { opacity: 0.45; }
+.te-cell-mark { fill: none; stroke: var(--te-mark); stroke-width: 3.5; }
+.te-fig text.te-emoji { font-size: 18px; }
+.te-fig text.te-head { fill: var(--c); font-size: 13px; font-weight: 800; }
+.te-fig text.te-sub2 { fill: var(--vp-c-text-2); font-size: 11px; }
