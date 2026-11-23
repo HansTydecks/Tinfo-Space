@@ -1,8 +1,8 @@
 <script setup>
-// Video-Einbettung mit Platzhalter.
-// <VideoBox title="…" />                 → schöner Platzhalter „Video coming soon“
-// <VideoBox title="…" youtube="abc123" /> → YouTube (nocookie) wird erst nach Klick geladen
-import { ref } from 'vue'
+// Erklärvideo als kompakter Button, der das Video groß in einem Overlay öffnet.
+// <VideoBox title="…" />                                → kleiner Hinweis „Video coming soon“
+// <VideoBox title="…" youtube="abc123" duration="4:26" /> → Button; YouTube (nocookie) lädt erst nach Klick
+import { ref, nextTick, onUnmounted } from 'vue'
 
 const props = defineProps({
   title: { type: String, default: 'Video' },
@@ -10,76 +10,182 @@ const props = defineProps({
   note: { type: String, default: 'Video coming soon' },
   duration: String,
 })
-const laeuft = ref(false)
+
+const offen = ref(false)
+const ausloeser = ref(null)
+const schliessenBtn = ref(null)
+
+function onKey(e) {
+  if (e.key === 'Escape') schliessen()
+}
+
+async function oeffnen() {
+  if (!props.youtube) return
+  offen.value = true
+  document.body.style.overflow = 'hidden'
+  window.addEventListener('keydown', onKey)
+  await nextTick()
+  schliessenBtn.value?.focus()
+}
+
+function schliessen() {
+  if (!offen.value) return
+  offen.value = false
+  document.body.style.overflow = ''
+  window.removeEventListener('keydown', onKey)
+  ausloeser.value?.focus()
+}
+
+onUnmounted(() => {
+  if (offen.value) {
+    document.body.style.overflow = ''
+    window.removeEventListener('keydown', onKey)
+  }
+})
 </script>
 
 <template>
-  <figure class="vb">
-    <div class="vb-frame">
-      <iframe
-        v-if="youtube && laeuft"
-        :src="`https://www.youtube-nocookie.com/embed/${youtube}?autoplay=1&rel=0`"
-        :title="title"
-        allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
-        allowfullscreen
-      />
-      <button v-else class="vb-cover" type="button" :disabled="!youtube" @click="laeuft = true" :aria-label="youtube ? `Play video: ${title}` : `${title} – ${note}`">
-        <svg class="vb-deko" viewBox="0 0 320 180" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
-          <circle cx="40" cy="30" r="46" class="vb-b1" />
-          <circle cx="292" cy="160" r="62" class="vb-b2" />
-          <rect x="196" y="22" width="92" height="40" rx="14" class="vb-b3" />
-          <path d="M214 62 l-6 12 l16 -12 z" class="vb-b3" />
-          <rect x="30" y="118" width="80" height="34" rx="12" class="vb-b4" />
-          <path d="M96 152 l6 10 l-16 -10 z" class="vb-b4" />
-        </svg>
-        <span class="vb-play" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" /></svg>
-        </span>
-        <span class="vb-text">
-          <strong>{{ title }}</strong>
-          <span>{{ youtube ? (duration ? `▶ Play · ${duration}` : '▶ Play') : `🎬 ${note}` }}</span>
-        </span>
-      </button>
-    </div>
-    <figcaption v-if="youtube && !laeuft" class="vb-hint">Clicking loads the video from YouTube.</figcaption>
-  </figure>
+  <div class="vb">
+    <button
+      v-if="youtube"
+      ref="ausloeser"
+      type="button"
+      class="vb-btn"
+      :aria-label="`Play explainer video: ${title}`"
+      @click="oeffnen"
+    >
+      <span class="vb-icon" aria-hidden="true">▶</span>
+      <span><strong>Explainer video:</strong> {{ title }}</span>
+      <span v-if="duration" class="vb-dauer">· {{ duration }}</span>
+    </button>
+    <span v-else class="vb-btn is-bald">🎬 {{ title }} – {{ note }}</span>
+    <span v-if="youtube" class="vb-hint">Opens the video from YouTube.</span>
+
+    <Teleport to="body">
+      <div v-if="offen" class="vb-overlay" @click.self="schliessen">
+        <div class="vb-fenster" role="dialog" aria-modal="true" :aria-label="title">
+          <div class="vb-kopf">
+            <strong>{{ title }}</strong>
+            <button ref="schliessenBtn" type="button" class="vb-zu" aria-label="Close video" @click="schliessen">✕</button>
+          </div>
+          <div class="vb-frame">
+            <iframe
+              :src="`https://www.youtube-nocookie.com/embed/${youtube}?autoplay=1&rel=0`"
+              :title="title"
+              allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+              allowfullscreen
+            />
+          </div>
+        </div>
+      </div>
+    </Teleport>
+  </div>
 </template>
 
 <style scoped>
-.vb { margin: 20px 0; }
+.vb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+  margin: 14px 0 6px;
+}
+.vb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 18px 7px 14px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--vp-button-brand-bg);
+  color: var(--vp-button-brand-text);
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.vb-btn:hover {
+  background: var(--vp-button-brand-hover-bg);
+}
+.vb-btn:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+.vb-btn.is-bald {
+  background: var(--vp-c-default-soft);
+  color: var(--vp-c-text-2);
+  cursor: default;
+}
+.vb-icon {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  font-size: 11px;
+  padding-left: 2px;
+}
+.vb-dauer {
+  opacity: 0.8;
+}
+.vb-hint {
+  font-size: 12px;
+  color: var(--vp-c-text-3);
+}
+
+.vb-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.75);
+}
+.vb-fenster {
+  width: min(1100px, 100%);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--vp-c-bg);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+.vb-kopf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px 10px 18px;
+  font-size: 15px;
+  color: var(--vp-c-text-1);
+}
+.vb-zu {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--vp-c-default-soft);
+  color: var(--vp-c-text-1);
+  font-size: 16px;
+  cursor: pointer;
+}
+.vb-zu:hover {
+  background: var(--vp-c-default-3);
+}
 .vb-frame {
   position: relative;
   aspect-ratio: 16 / 9;
-  border-radius: 14px;
-  overflow: hidden;
-  border: 1px solid var(--vp-c-divider);
-  background: linear-gradient(135deg, var(--vp-c-brand-soft), var(--vp-c-bg-soft) 60%, var(--vp-c-default-soft));
+  background: #000;
 }
-.vb-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.vb-cover {
-  position: absolute; inset: 0; width: 100%; height: 100%;
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
-  border: 0; padding: 16px; background: none; color: var(--vp-c-text-1); cursor: pointer; font: inherit;
+.vb-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
-.vb-cover:disabled { cursor: default; }
-.vb-deko { position: absolute; inset: 0; width: 100%; height: 100%; }
-.vb-b1 { fill: #1c64d1; opacity: 0.12; }
-.vb-b2 { fill: #c2255c; opacity: 0.12; }
-.vb-b3 { fill: #2b8a3e; opacity: 0.16; }
-.vb-b4 { fill: #d9480f; opacity: 0.16; }
-.vb-play {
-  position: relative;
-  display: grid; place-items: center;
-  width: 72px; height: 72px; border-radius: 50%;
-  background: var(--vp-c-brand-1); color: #fff;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
-  transition: transform 0.15s ease;
-}
-.vb-cover:disabled .vb-play { background: var(--vp-c-text-3); }
-.vb-cover:not(:disabled):hover .vb-play { transform: scale(1.08); }
-.vb-play svg { width: 34px; height: 34px; margin-left: 4px; fill: currentColor; }
-.vb-text { position: relative; display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; }
-.vb-text strong { font-size: 18px; }
-.vb-text span { font-size: 14px; color: var(--vp-c-text-2); }
-.vb-hint { margin-top: 6px; font-size: 12px; color: var(--vp-c-text-3); text-align: center; }
 </style>
