@@ -8,6 +8,7 @@
     "test:reported-speech": "node scripts/verify-reported-speech-drill.mjs",
     "test:passive": "node scripts/verify-passive-drill.mjs",
     "test:tenses": "node scripts/verify-tense-drill.mjs",
+    "test:word-order": "node scripts/verify-word-order-drill.mjs",
     "test:nose-dive": "node scripts/verify-nose-dive.mjs",
     "test:db-uebungen": "node scripts/verify-db-uebungen.mjs",
     "test:tools": "node scripts/verify-tools.mjs",

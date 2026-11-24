@@ -14,6 +14,8 @@ Both forms talk about the past. But they look at it in **different ways**:
 the **simple past** looks at a **finished time** – the **present perfect** looks **back from now** and is interested in **now**.
 *Simple past: Wann ist es passiert? – Present perfect: Was bedeutet es jetzt?*
 
+<VideoBox title="Present perfect vs simple past" youtube="LsAPVf3mI6c" duration="1:51" playlist="PLeremJJLUYeo" />
+
 ## Where is it in the grid? {#grid}
 
 <TenseGraphic name="grid" mark="present-perfect" caption="Present tense + perfect aspect: have/has (present!) + 3rd form. That’s why it is linked to now." />

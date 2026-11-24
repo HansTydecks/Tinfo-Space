@@ -6,7 +6,7 @@ Willkommen im Englischbereich für die 9. Klasse!
 
 - Conditional Sentences (Type 2 und 3)
 - Reported Speech
-- Relative Clauses
+- [Relative Clauses](../grammar/word-order/clauses#relative)
 
 ## Materialien
 

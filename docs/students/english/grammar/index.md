@@ -15,4 +15,5 @@ Here you can learn and practise English grammar step by step.
 | [Prepositions](./prepositions/) | in, on, at, by, with, from … – the small words that show *when*, *where*, *how* | 🤫 [Silent Teacher](./prepositions/silent-teacher) |
 | [Reported speech](./reported-speech/) | *He said he was tired.* – backshift, pronouns, time and place words, questions and commands | 🎙️ [Reporter game](./reported-speech/reporter) |
 | [Tense & aspect](./tenses/) | *I play / I am playing / I have played …* – all verb forms in one grid: present, past, perfect, progressive and the ways to talk about the future | 🕰️ [Time Travel Agency](./tenses/time-agency) |
+| [Word order](./word-order/) | *Yesterday I went …* (not *went I*) – the sentence train S – V – O – M – P – T, questions with *do*, *always* in the middle, *give it to me*, *because I was tired* | 🚂 [Word Order Express](./word-order/express) |
 | [Passive voice](./passive/) | *The jewels were stolen.* – be + past participle, all tenses, modal verbs, by-agent, questions, *have sth done*, *He is said to …* | 🕵️ [Crime Scene game](./passive/crime-scene) |

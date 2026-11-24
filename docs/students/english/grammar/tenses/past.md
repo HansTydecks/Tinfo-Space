@@ -13,6 +13,8 @@ description: "The simple past: regular verbs with -ed, irregular verbs, was/were
 You use the simple past to tell **what happened** – at a time that is **over**: yesterday, last week, in 2019.
 *Das simple past erzählt, was zu einem abgeschlossenen Zeitpunkt in der Vergangenheit passiert ist.*
 
+<VideoBox title="The simple past" youtube="MSWs3FBsr_0" duration="1:58" playlist="PLeremJJLUYeo" />
+
 ## Where is it in the grid? {#grid}
 
 <TenseGraphic name="grid" mark="past-simple" caption="Past tense + simple aspect = simple past." />

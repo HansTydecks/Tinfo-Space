@@ -13,6 +13,8 @@ description: "The film had already started when we arrived. Past perfect simple 
 When you tell a story in the past, sometimes you need to go **even further back**. That’s the job of the past perfect: the **past before the past**.
 *Das past perfect ist die Vorvergangenheit: Es war schon vorher passiert.*
 
+<VideoBox title="Past perfect" youtube="Ff8UZf5njds" duration="1:26" playlist="PLeremJJLUYeo" />
+
 ## Where is it in the grid? {#grid}
 
 <TenseGraphic name="grid" mark="past-perfect,past-perfect-progressive" caption="Past tense + perfect aspect: had (past!) + 3rd form. With progressive: had been + -ing." />
