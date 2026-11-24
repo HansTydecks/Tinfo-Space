@@ -13,6 +13,8 @@ description: "I was reading when the phone rang. The past progressive: was/were 
 The past progressive shows that something was **going on** at a time in the past – you are **in the middle** of it.
 *Das past progressive zeigt: Etwas war gerade im Gange – oft als Hintergrund für eine kurze Handlung.*
 
+<VideoBox title="Past progressive" youtube="tYhRGLCTLCA" duration="1:23" playlist="PLeremJJLUYeo" />
+
 ## Where is it in the grid? {#grid}
 
 <TenseGraphic name="grid" mark="past-progressive" caption="Past tense + progressive aspect: was/were (past!) + -ing." />

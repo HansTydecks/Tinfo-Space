@@ -15,6 +15,8 @@ description: "When English changes its word order: So do I / Neither do I, inver
 You know the rule: English keeps **S – V**. But there are a few fixed patterns where English uses **question order** in a statement. This is called **inversion**.
 *Inversion heißt: Hilfsverb vor Subjekt – wie in einer Frage. Das passiert aber nur in wenigen, festen Mustern – meistens in formellen Texten.*
 
+<VideoBox title="Inversion & emphasis" youtube="eKaTUKywcH8" duration="1:52" playlist="PLFlt9s9-ixEI" />
+
 ## Where is it in the train? {#train}
 
 <WordOrderGraphic name="train" mark="s,v" caption="Inversion: the verb wagon is coupled in front of the subject – like in a question." />

@@ -15,7 +15,7 @@ English word order looks easy: *subject – verb – object*. But German speaker
 This page shows you the big picture. The chapters show you the details – and the typical traps.
 *Im Deutschen darf vieles im Satz wandern – im Englischen kaum. Die Reihenfolge der Wörter trägt im Englischen die Bedeutung.*
 
-<VideoBox title="Word order" />
+<VideoBox title="The sentence train – word order in 5 golden rules" youtube="XxfFKOQ_idA" duration="2:37" playlist="PLFlt9s9-ixEI" />
 
 <ExpressButton />
 

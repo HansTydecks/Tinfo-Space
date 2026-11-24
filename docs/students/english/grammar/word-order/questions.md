@@ -16,6 +16,8 @@ In German, you just put the verb first: *Spielst du Fußball?* In English, you c
 English questions need a **helping verb** in front of the subject.
 *Im Englischen springt nie das Vollverb nach vorne, sondern immer ein Hilfsverb (do, be, have, can …).*
 
+<VideoBox title="Questions & negatives" youtube="DQeXhRtimrs" duration="1:54" playlist="PLFlt9s9-ixEI" />
+
 ## Where is it in the train? {#train}
 
 <WordOrderGraphic name="train" mark="s,v" caption="In a question, the helping verb wagon is coupled in front of the subject." />

@@ -15,6 +15,8 @@ After S – V – O come the extra information wagons: **how?**, **where?** and 
 The rule is easy: **manner – place – time**. In German it’s often the other way round.
 *Im Deutschen sagt man oft erst die Zeit, dann den Ort: „Ich bin heute in der Schule.“ Im Englischen: Ort vor Zeit – I’m **at school today**.*
 
+<VideoBox title="Manner, place, time" youtube="osvwN1GlDb4" duration="1:47" playlist="PLFlt9s9-ixEI" />
+
 ## Where is it in the train? {#train}
 
 <WordOrderGraphic name="train" mark="m,p,t" caption="The last three wagons: manner – place – time." />

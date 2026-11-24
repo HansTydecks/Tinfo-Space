@@ -14,6 +14,8 @@ description: "Where do always, usually, often, sometimes, never go? Before the m
 Small words like *always* or *never* don’t go at the end and don’t go at the start – they go in the **middle** of the sentence.
 *Im Deutschen steht „immer“ nach dem Verb (Sie kommt immer zu spät). Im Englischen steht es meistens vor dem Vollverb: She always comes late.*
 
+<VideoBox title="Frequency adverbs in the middle" youtube="-hrFISyjefQ" duration="1:46" playlist="PLFlt9s9-ixEI" />
+
 ## Where is it in the train? {#train}
 
 <WordOrderGraphic name="train" mark="s,v" caption="Frequency adverbs squeeze in between the subject and the verb wagons." />

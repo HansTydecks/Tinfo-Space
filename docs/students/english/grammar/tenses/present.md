@@ -13,6 +13,8 @@ description: "I play or I am playing? Simple present and present progressive: fo
 Both forms are **present tense**. The difference is the **aspect**: do you look at something that happens **again and again** – or at something that is going on **right now**?
 *Beide Formen sind Gegenwart. Der Unterschied: Gewohnheit / allgemein gültig (simple) oder gerade jetzt im Gange (progressive).*
 
+<VideoBox title="Simple present vs present progressive" youtube="NpyvmXMrDTw" duration="1:58" playlist="PLeremJJLUYeo" />
+
 ## Where is it in the grid? {#grid}
 
 <TenseGraphic name="grid" mark="present-simple,present-progressive" caption="Same tense (present) – different aspect: simple or progressive." />

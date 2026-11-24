@@ -2,13 +2,20 @@
 // Erklärvideo als kompakter Button, der das Video groß in einem Overlay öffnet.
 // <VideoBox title="…" />                                → kleiner Hinweis „Video coming soon“
 // <VideoBox title="…" youtube="abc123" duration="4:26" /> → Button; YouTube (nocookie) lädt erst nach Klick
-import { ref, nextTick, onUnmounted } from 'vue'
+// optional playlist="PL…" → Video läuft innerhalb der Serie weiter + Link zur ganzen Playlist
+import { ref, computed, nextTick, onUnmounted } from 'vue'
 
 const props = defineProps({
   title: { type: String, default: 'Video' },
   youtube: { type: String, default: '' },
   note: { type: String, default: 'Video coming soon' },
   duration: String,
+  playlist: { type: String, default: '' },
+})
+
+const embedUrl = computed(() => {
+  const list = props.playlist ? `&list=${encodeURIComponent(props.playlist)}` : ''
+  return `https://www.youtube-nocookie.com/embed/${props.youtube}?autoplay=1&rel=0${list}`
 })
 
 const offen = ref(false)
@@ -59,7 +66,15 @@ onUnmounted(() => {
       <span v-if="duration" class="vb-dauer">· {{ duration }}</span>
     </button>
     <span v-else class="vb-btn is-bald">🎬 {{ title }} – {{ note }}</span>
-    <span v-if="youtube" class="vb-hint">Opens the video from YouTube.</span>
+    <span v-if="youtube" class="vb-hint">
+      Opens the video from YouTube.
+      <a
+        v-if="playlist"
+        :href="`https://www.youtube.com/playlist?list=${playlist}`"
+        target="_blank"
+        rel="noopener"
+      >All episodes ↗</a>
+    </span>
 
     <Teleport to="body">
       <div v-if="offen" class="vb-overlay" @click.self="schliessen">
@@ -70,7 +85,7 @@ onUnmounted(() => {
           </div>
           <div class="vb-frame">
             <iframe
-              :src="`https://www.youtube-nocookie.com/embed/${youtube}?autoplay=1&rel=0`"
+              :src="embedUrl"
               :title="title"
               allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
               allowfullscreen
@@ -134,6 +149,10 @@ onUnmounted(() => {
 .vb-hint {
   font-size: 12px;
   color: var(--vp-c-text-3);
+}
+.vb-hint a {
+  margin-left: 6px;
+  color: var(--vp-c-brand-1);
 }
 
 .vb-overlay {

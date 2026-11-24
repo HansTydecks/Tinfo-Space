@@ -14,6 +14,8 @@ description: "The basic English word order S – V – O: no inversion after Yes
 Every English statement starts with the same three wagons: **who** – **does what** – **to what / whom**.
 *Im Englischen steht das Subjekt fast immer direkt vor dem Verb – egal, was am Satzanfang steht.*
 
+<VideoBox title="Subject, verb, object" youtube="wTYQGlW6jvg" duration="2:07" playlist="PLFlt9s9-ixEI" />
+
 ## Where is it in the train? {#train}
 
 <WordOrderGraphic name="train" mark="s,v,o" caption="The first three wagons: subject – verb – object." />

@@ -14,6 +14,8 @@ description: "English subordinate clauses keep subject – verb: because I was t
 This is the **number one** mistake of German speakers: in German, the verb goes to the **end** after *weil, dass, wenn, ob*. In English, it **doesn’t**. A subordinate clause has the same order as a normal sentence.
 *Nach because, that, when, if … bleibt die Satzstellung S – V – O. Das Verb wandert nie ans Ende.*
 
+<VideoBox title="Subordinate clauses & indirect questions" youtube="PK42w5LfWvk" duration="1:39" playlist="PLFlt9s9-ixEI" />
+
 ## Where is it in the train? {#train}
 
 <WordOrderGraphic name="train" mark="s,v,o" caption="A subordinate clause is a small train of its own – with the same order S – V – O." />

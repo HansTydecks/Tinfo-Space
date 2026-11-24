@@ -14,6 +14,8 @@ description: "give him the book or give the book to him? Two objects in English,
 Some verbs have **two** object wagons: a **thing** and a **person**. And some verbs have a little extra word (*off, up, on …*) that can move.
 *Bei „geben, schicken, zeigen …“ gibt es zwei Möglichkeiten. Bei Pronomen und Phrasal Verbs gibt es feste Regeln.*
 
+<VideoBox title="Two objects & phrasal verbs" youtube="zqOCZEm6Dgc" duration="1:41" playlist="PLFlt9s9-ixEI" />
+
 ## Where is it in the train? {#train}
 
 <WordOrderGraphic name="train" mark="v,o" caption="This chapter is about the object wagon – and what can stand next to it." />

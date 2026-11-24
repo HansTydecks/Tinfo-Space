@@ -14,6 +14,8 @@ This form combines **both** aspects: **perfect** (looking back from now) + **pro
 It answers the question **How long …?**
 *Diese Form verbindet beides: Etwas hat in der Vergangenheit begonnen und läuft bis jetzt – wie lange schon?*
 
+<VideoBox title="Present perfect progressive" youtube="wYWqVZWpzwM" duration="1:35" playlist="PLeremJJLUYeo" />
+
 ## Where is it in the grid? {#grid}
 
 <TenseGraphic name="grid" mark="present-perfect-progressive" caption="Present tense + perfect + progressive: have/has (present) + been + -ing." />

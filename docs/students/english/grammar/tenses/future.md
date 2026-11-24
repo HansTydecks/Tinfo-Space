@@ -14,6 +14,8 @@ German speakers often use the present for the future: *Morgen **gehe** ich ins K
 English is different: you choose a form that shows **what kind of future** you mean – a prediction? a plan? an appointment?
 *Im Englischen gibt es keine eigene Zukunftszeit. Die Form zeigt, wie sicher oder wie geplant etwas ist.*
 
+<VideoBox title="Talking about the future" youtube="dCkiuo9PyZg" duration="1:37" playlist="PLeremJJLUYeo" />
+
 ## Where is it in the grid? {#grid}
 
 <TenseGraphic name="grid" mark="future" caption="With will you can build all four aspects for the future. But will is only one of several ways to talk about the future." />
